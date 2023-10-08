@@ -1,0 +1,99 @@
+body {
+  background-color: #070f1c;
+}
+
+.root {}
+
+.navbar {
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Vertically center items */
+  margin: 30px 0 0 120px;
+}
+
+.logo{
+  margin-right: -700px;
+}
+
+.navlinks {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  margin-right: 25px;
+  font-weight: bold;
+  color: grey;
+  font-size: 1em;
+}
+
+.navbutton{
+  border: none;
+  display: inline;
+  margin-left: auto;
+  margin-right: 120px;
+  height: 55px;
+  width: 120px;
+  font-weight: bold;
+  color: #296bd6;
+  font-size: 0.9em;
+  background-color: #1d223b;
+  border-radius: 10px;
+}
+
+.navbutton:hover{
+  background-color: #296bd6;
+  color: white;
+}
+
+.text-container {
+  display: inline; /* Make the text container inline so it aligns vertically with the image */
+}
+
+a:active {
+  color: blue;
+}
+
+a:hover {
+  color: white;
+}
+
+h1{
+  color: white;
+}
+
+.disptext{
+  margin-left: 130px;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 4em;
+  font-weight: lighter;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+
+.container{
+  width: 400px;
+  height: 8px;
+  border-radius: 20px;
+  background-color: #1d223b;
+  border: 1px solid #000;
+  position: relative;
+  margin: 0 0 0 130px;
+}
+
+.fill-bar{
+  width: 0;
+  height: 100%;
+  background-color: #3498db;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: fillAnimation 4s linear infinite;
+  border-radius: 20px;
+}
+
+@keyframes fillAnimation {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
