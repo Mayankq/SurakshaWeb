@@ -9,7 +9,7 @@ const Blog = () => {
   useEffect(() => {
     const fetchBlogTitles = async () => {
       try {
-        const response = await axios.get('http://127.0.0.1:3000/getBlogs');
+        const response = await axios.get('https://sljom89u8d.execute-api.us-east-1.amazonaws.com/dev/getBlogs');
         setBlogTitles(response.data.titles);
       } catch (error) {
         console.error('Error fetching blog titles:', error);
@@ -22,7 +22,7 @@ const Blog = () => {
   const handleTitleClick = async (title) => {
     try {
       // Assuming the server expects a GET request with the title as a parameter
-      const response = await axios.get(`http://127.0.0.1:3000/getBlog/${title}`);
+      const response = await axios.get(`https://sljom89u8d.execute-api.us-east-1.amazonaws.com/dev/getBlog/${title}`);
   
       // Update the state with the selected title and blog content
       setSelectedTitle(title);
