@@ -1,19 +1,10 @@
-import React from 'react';
-import "../styles.css"
+import '../css/styles.css'; // Import your CSS file here
 
-function ContactSection()  {
-    const sectionStyle = {
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      textAlign: 'center',
-    };
-
+function ContactSection() {
   return (
-    <section style={sectionStyle}>
+    <section className="contact-section">
       <br /><br /><br />
-      <h4 className="disptextz" id="aboutus" style={{ fontSize: '1em', fontWeight: 'bolder' }}>
+      <h4 className="disptextz center-heading" id="aboutus">
         ABOUT US
       </h4>
       <div className="aboutus">
@@ -23,7 +14,7 @@ function ContactSection()  {
       <div className="sometblue">
         <h3 className="whitebold">Bridging the Financial Gap in <br />Healthcare with Suraksha One: <br />Your Trusted Partner for Affordable Medical Funding</h3>
         <a href="https://calendly.com/suraksha1/suraksha-one?month=2023-06" style={{ textDecoration: 'none' }}>
-          <button type="button" name="contact2" className="navbutton" style={{ marginLeft: '110px', marginTop: '0 !important', marginRight: '200px', backgroundColor: 'white !important' }}>
+          <button type="button" name="contact2" className="navbutton">
             Contact Us
           </button>
         </a>

@@ -1,17 +1,9 @@
-import React from 'react';
-import "../styles.css"
+import '../css/styles.css'; 
 
 function FeaturesSection() {
-  const sectionStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    textAlign: 'center',
-  };
   return (
-    <section style={sectionStyle}>
-      <h4 className="disptextz" id="features" style={{ fontSize: '1em', fontWeight: 'bolder' }}>
+    <section className="features-section">
+      <h4 className="disptextz center-heading" id="features">
         FEATURES
       </h4>
       <div className="tabswithdesc">

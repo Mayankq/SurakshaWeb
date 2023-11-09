@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import lottie from 'lottie-web';
-import "../styles.css"
+import "../css/styles.css"; 
 
 function HeroSection() {
   useEffect(() => {
@@ -33,8 +33,8 @@ function HeroSection() {
   }, []);
 
   return (
-    <section>
-      <div className="text-with-animation" id="home">
+    <section style={{ padding: '20px' }}>
+      <div className="text-with-animation" id="home" style={{ marginTop: '20px' }}>
         <div className="text-content">
           <h1 className="disptextt" style={{ marginTop: '120px !important' }}>
             Suraksha One,
@@ -52,7 +52,7 @@ function HeroSection() {
             </h3>
           </div>
         </div>
-        <div className="lottie-container"></div>
+        <div className="lottie-container" style={{ margin: '20px 0' }}></div>
       </div>
       <a href="https://calendly.com/suraksha1/suraksha-one?month=2023-06" style={{ textDecoration: 'none' }}>
         <button type="button" name="contact2" className="navbuttonn">

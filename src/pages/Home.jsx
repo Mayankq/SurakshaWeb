@@ -6,6 +6,8 @@ import ContactSection from '../components/ContactSection';
 import PartnersSection from '../components/PartnersSection';
 import Footer from '../components/Footer';
 
+import "../css/styles.css"
+
 function Home() {
   const [navToggleChecked, setNavToggleChecked] = useState(false);
 
